@@ -1,0 +1,143 @@
+/* Mobile */
+@media screen and (max-width: 480px) and (max-resolution: 3dppx) {
+  .index-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+  }
+  .navbar {
+    display: none;
+  }
+
+  #promotionVideo,
+  #content > #promotionVideoForTablet {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .destinations {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Tablet Version */
+@media screen and (min-width: 480px) and (max-width: 1179px) and (max-resolution: 2dppx) {
+  .destinations {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #promotionVideo {
+    display: none;
+  }
+
+  #content > #promotionVideoForTablet {
+    display: block;
+    width: 600px;
+  }
+
+  .articlecontent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #anchor-top {
+    display: block;
+  }
+}
+
+/* PC Version*/
+@media screen and (min-width: 1280px) and (min-resolution: 1dppx) {
+  .header {
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: block;
+  }
+  
+  .navbar > ul > li {
+    padding: 0.5%;
+    text-transform: uppercase;
+    font-family: 'Natural';
+    list-style: none;
+  }
+
+  .navbar > ul > li > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  #promotionVideo {
+    display: block;
+    width: 600px;
+    border: 5px double #6f2b2f;
+    border-width: 15px;
+  }
+
+  #promotionVideoForTablet {
+    display: none;
+  }
+
+  #content {
+    display: flex;
+  }
+
+  .destinations {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 66%;
+    background-color: #008d9a;
+  }
+
+  .destinations > article {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted #955f20;
+  }
+
+  #titleistanbul,
+  #titleizmir,
+  #titletrabzon {
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-family: "Notable", sans-serif;
+  }
+  #istanbulparagraph,
+  #izmirparagraph,
+  #trabzonparagraph {
+    text-indent: 30px;
+    word-spacing: 3px;
+    font-size: 1.2em;
+  }
+
+  .futureTrends {
+    position: fixed;
+    flex-basis: 33%;
+    top: 25%;
+    right: 0;
+    border: 5px solid #287233;
+    background-color: #979797;
+    font-size: 0.9rem;
+  }
+
+  .articlecontent {
+    display: flex;
+  }
+
+  .articlecontent p a:visited {
+    color: saddlebrown;
+  }
+
+  .articlecontent p a:hover {
+    color: #ffffff;
+  }
+
+  #anchor-top {
+    display: block;
+  }
+}

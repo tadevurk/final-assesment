@@ -1,0 +1,338 @@
+#bd-florence,
+#bd-tokyo,
+#bd-banff,
+#bd-bali,
+#bd-lucia,
+#bd-machu {
+  padding: 10% 2%;
+}
+
+.bd-destinations > article > p::first-letter {
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.bd-destinations > article > p > span {
+  font-size: smaller;
+  font-style: italic;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) and (max-resolution: 3dppx) {
+  .bd-container {
+    display: grid;
+    grid-template-columns: [first] 70% [line2] 30% [line3];
+    grid-template-rows:
+      [row1start] 150px [row1end] auto [thirdline]
+      auto [fourthline] 80px [lastline];
+  }
+
+  aside {
+    grid-column: first / line2;
+    grid-row: thirdline / fourthline;
+  }
+
+  aside > figure {
+    display: block;
+    margin: 0;
+  }
+
+  .bd-header {
+    display: block;
+    grid-column: first / line2;
+    grid-row: row1start / row1end;
+  }
+
+  .bd-navbar {
+    grid-column: line2 / line3;
+    grid-row: row1start / row1end;
+    display: none;
+  }
+
+  .bd-destinations {
+    grid-column: first / line2;
+    grid-row: row1end / thirdline;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:
+      [line-a] 600px [line-b] 600px [line-c] 600px [line-d] 600px
+      [line-e];
+    background-color: sienna;
+  }
+  .bd-destinations > article > p {
+    text-indent: 2em;
+  }
+  .bd-destinations > article > h2,
+  p {
+    padding: 0 3%;
+    text-align: left;
+  }
+  .bd-destinations > article > p::first-letter {
+    font-size: 30px;
+    padding-right: 5px;
+  }
+
+  .bd-footer {
+    display: block;
+    grid-column: first / line2;
+    grid-row: fourthline / lastline;
+  }
+  .bd-footer > footer {
+    padding: 5% 0 5% 0;
+  }
+
+  .bd-footer > #cookie {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+    color: #fff;
+    z-index: 9999;
+    background-color: #fa0;
+  }
+
+  #bd-machu,
+  #bd-florence {
+    display: none;
+  }
+
+  #bd-tokyo {
+    grid-row: line-d / line-e;
+    padding: 10% 0;
+    background-color: #fa0;
+  }
+  #bd-banff {
+    grid-row: line-c / line-d;
+    padding: 8% 0;
+    background-color: chartreuse;
+  }
+  #bd-bali {
+    grid-row: line-b / line-c;
+    padding: 10% 0;
+    background-color: cornflowerblue;
+  }
+  #bd-lucia {
+    grid-row: line-a / line-b;
+    padding: 10% 0;
+    background-color: deeppink;
+  }
+}
+
+/* Tablet Version*/
+@media screen and (min-width: 480px) and (max-width: 1179px) and (max-resolution: 2dppx) {
+  .bd-container {
+    grid-template-rows:
+      [row1start] 100px [row1end] 100px [row2end] auto [thirdline]
+      auto [fourthline] 80px [lastline];
+  }
+
+  aside {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-column: first / line3;
+  }
+
+  aside > figure {
+    display: block;
+  }
+
+  aside > figure > a > img {
+    width: 300px;
+  }
+
+  .bd-header {
+    grid-column: first / line2;
+    grid-row: row1start / row1end;
+  }
+
+  .bd-navbar {
+    display: block;
+    grid-column: first / line2;
+    grid-row: row1end / row2end;
+  }
+
+  .bd-destinations {
+    grid-column: first / line3;
+    grid-row: row2end / thirdline;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:
+      [line-a] 400px [line-b] 400px [line-c] 400px [line-d] 400px
+      [line-e];
+  }
+
+  .bd-destinations > article {
+    display: block;
+  }
+
+  .bd-destinations > article > h2,
+  p {
+    padding: 0 3%;
+    text-align: left;
+  }
+
+  aside > figure:nth-child(3) {
+    display: none;
+  }
+
+  #bd-florence {
+    display: block;
+  }
+  #bd-tokyo {
+    grid-column: 1 / 2;
+    grid-row: line-a / line-b;
+    background-color: slateblue;
+  }
+  #bd-banff {
+    grid-column: 2 /3;
+    grid-row: line-a / line-c;
+    padding-top: 70%;
+    background-color: tomato;
+  }
+  #bd-bali {
+    grid-column: 1 / 2;
+    grid-row: line-b / line-d;
+    padding-top: 40%;
+    background-color: yellow;
+  }
+  #bd-lucia {
+    grid-column: 2 / 3;
+    grid-row: line-c / line-d;
+    background-color: skyblue;
+  }
+  #bd-florence {
+    grid-column: 1 / 3;
+    grid-row: line-d / line-e;
+    background-color: springgreen;
+  }
+  #bd-machu {
+    display: none;
+  }
+
+  .bd-footer {
+    display: block;
+    grid-column: first / line2;
+    grid-row: fourthline / lastline;
+  }
+  .bd-footer > footer {
+    padding: 5% 0 5% 0;
+  }
+  .bd-footer > #cookie {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+    color: #fff;
+    z-index: 9999;
+    background-color: #fa0;
+  }
+}
+
+/* PC Version*/
+@media screen and (min-width: 1280px) and (min-resolution: 1dppx) {
+  .bd-container {
+    grid-template-columns: [first] 33% [line2] 33% [line3] 34% [line4];
+    grid-template-rows:
+      [row1start] 100px [row1end] 100px [row2end] auto [thirdline]
+      auto [fourthline] 80px [lastline];
+  }
+
+  aside {
+    grid-column: first / line4;
+    grid-row: thirdline / fourthline;
+    display: grid;
+    grid-template-columns: [first] 33% [line2] 33% [line3] 34% [line4];
+    grid-template-rows: 100%;
+  }
+
+  aside > figure {
+    margin: 0;
+  }
+
+  aside > figure > a > img {
+    height: 250px;
+    width: 500px;
+  }
+
+  .bd-navbar {
+    display: block;
+    grid-column: first / line4;
+    grid-row: row1end / row2end;
+  }
+  
+  .bd-navbar > ul > li {
+    padding: 0.5%;
+    text-transform: uppercase;
+    font-family: 'Natural';
+    list-style: none;
+  }
+
+  .bd-navbar > ul > li > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .bd-destinations {
+    grid-column: first / line4;
+    grid-row: row2end / thirdline;
+    display: grid;
+    grid-template-columns: [line-x] 33% [line-i] 33% [line-iii] 34% [line-iv];
+    grid-template-rows:
+      [line-a] 400px [line-b] 400px [line-c] 400px [line-d] 400px
+      [line-e];
+  }
+
+  .bd-destinations > article > p::first-letter {
+    font-size: 30px;
+    padding-right: 5px;
+  }
+
+  #bd-banff {
+    grid-column: line-x / line-i;
+    grid-row: line-a / line-b;
+    background-color: chartreuse;
+  }
+  #bd-lucia {
+    grid-column: line-x / line-i;
+    grid-row: line-b / line-e;
+    padding-top: 85%;
+    background-color: deeppink;
+  }
+  #bd-tokyo {
+    grid-column: line-i / line-iii;
+    grid-row: line-a / line-d;
+    padding-top: 110%;
+    background-color: #fa0;
+  }
+  #bd-florence {
+    display: block;
+    grid-column: line-i / line-iv;
+    grid-row: line-d / line-e;
+    background-color: hotpink;
+  }
+  #bd-bali {
+    grid-column: line-iii / line-iv;
+    grid-row: line-a / line-c;
+    padding-top: 60%;
+    background-color: cornflowerblue;
+  }
+  #bd-machu {
+    display: block;
+    grid-column: line-iii / line-iv;
+    grid-row: line-c / line-d;
+    padding-top: 20%;
+    background-color: indigo;
+  }
+
+  .bd-footer > #cookie {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+    color: #fff;
+    z-index: 9999;
+    background-color: #fa0;
+  }
+}

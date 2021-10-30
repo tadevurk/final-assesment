@@ -1,0 +1,4 @@
+Student name: Vedat Turk
+Student number: 683343
+Student class: IT-1D
+URL student GitHub repository: https://github.com/tadevurk/final-assesment

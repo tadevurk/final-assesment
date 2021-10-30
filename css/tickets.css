@@ -1,0 +1,129 @@
+.tickets-row > th {
+  box-sizing: content-box;
+  width: 100%;
+  background-color: lightseagreen;
+}
+.tickets-table > tbody > tr:nth-child(2n) {
+  background-color: #cff;
+}
+.tickets-table > tbody > tr:nth-child(2n + 1) {
+  background-color: #fff;
+}
+.tickets-table > tbody > tr > td:first-child {
+  color: #ff0;
+}
+
+/* Mobile Version*/
+@media screen and (max-width: 480px) and (min-resolution: 1dppx) {
+  .tickets-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+  }
+  .tickets-navbar {
+    display: none;
+  }
+  .tickets-header {
+    display: flex;
+  }
+  .tickets-article {
+    display: none;
+  }
+  .tickets-table {
+    font-size: small;
+  }
+  .tickets-aside {
+    background-color: #7e7b52;
+  }
+  .tickets-aside > figure > a > img {
+    max-width: 400px;
+  }
+}
+
+/* Tablet Version*/
+@media screen and (min-width: 480px) and (max-width: 1179px) and (max-resolution: 2dppx) {
+  .tickets-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets-navbar {
+    display: block;
+  }
+  .tickets-article {
+    display: block;
+  }
+  .tickets-table {
+    font-size: initial;
+  }
+  .tickets-row > th {
+    text-align: left;
+    max-width: 10%;
+  }
+  .tickets-aside {
+    display: flex;
+    padding-right: 2%;
+  }
+  .tickets-aside > figure:nth-child(1) {
+    display: none;
+  }
+  .tickets-aside > figure:nth-child(3) {
+    display: block;
+  }
+  .tickets-container > aside > figure > a > img {
+    max-width: 250px;
+  }
+}
+
+/* PC Version*/
+@media screen and (min-width: 1280px) and (max-resolution: 3dppx) {
+  .tickets-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets-navbar {
+    display: block;
+  }
+  
+  .tickets-navbar > ul > li {
+    padding: 0.5%;
+    text-transform: uppercase;
+    font-family: 'Natural';
+    list-style: none;
+  }
+
+  .tickets-navbar > ul > li > a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .tickets-article {
+    display: block;
+  }
+  .tickets-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tickets-table {
+    order: 0;
+    width: 70%;
+    font-size: initial;
+  }
+
+  .tickets-row > th {
+    text-align: left;
+    max-width: 10%;
+  }
+
+  .tickets-aside {
+    order: 1;
+    width: 30%;
+  }
+
+  .tickets-aside > figure > a > img {
+    width: 300px;
+  }
+
+  #table-copyright {
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="contact,reach,holiday,email,vacation" />
+    <meta name="author" content="Vedat Turk" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="description"
+      content="You can contact us via this page easily by 
+        giving your personal information."
+    />
+    <meta name="language" content="ENG" />
+    <title>Contact Page</title>
+    <link rel="icon" href="./svg/favicon.svg" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+  </head>
+  <body>
+    <section class="contact-container">
+      <section class="contact-header">
+        <section>
+          <a href="./index.html">
+            <img id="logo" src="./svg/logo.svg" alt="Logo" />
+          </a>
+          <h1>Traveler</h1>
+          <h2>Broad Your Mind</h2>
+        </section>
+        <section class="burger-menu">
+          <input class="burger-check" type="checkbox" />
+          <section class="burger-line"></section>
+          <section class="burger-line"></section>
+          <section class="burger-line"></section>
+          <nav class="mobile-navbar">
+            <ul class="mobile-navbar-ul">
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+              <li>
+                <a href="./bestdestinations.html"> The Best Destinations </a>
+              </li>
+              <li>
+                <a href="./tickets.html"> Tickets </a>
+              </li>
+              <li>
+                <a href="./contact.html"> Contact Us </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <nav class="contact-navbar">
+          <ul>
+            <li>
+              <a href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./bestdestinations.html"> The Best Destinations </a>
+            </li>
+            <li>
+              <a href="./tickets.html"> Tickets </a>
+            </li>
+            <li>
+              <a href="./contact.html"> Contact Us </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <article>
+        <h2>
+          Please select the topic you would like to contact us about. So, we can
+          serve you better and faster.
+        </h2>
+      </article>
+      <section class="contact-content">
+        <form>
+          <fieldset>
+            <legend id="form-title">Contact About</legend>
+            <select name="topics">
+              <option value="order-delivery">Cancel tickets and return</option>
+              <option value="order-delivery">Complaint</option>
+              <option value="order-delivery">Other question</option>
+            </select>
+            <label for="text">Message</label>
+            <textarea id="text" name="Message" rows="12" cols="50"></textarea>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" />
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              value="email"
+              id="email"
+              name="email"
+              required
+            />
+            <input type="Submit" value="submit" />
+          </fieldset>
+        </form>
+        <aside class="contact-aside">
+          <figure>
+            <a href="https://www.istockphoto.com/nl/search/2/image?phrase=duomo+di+milano">
+              <img
+                src="./img/milan-photo.jpg"
+                alt="Milano Photo"
+                title="Milano Photos"
+              />
+            </a>
+            <figcaption>Milano <span>&copy; IStockPhoto</span></figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.flytap.com/en-be/destinations/spain/barcelona">
+              <img
+                src="./img/barcelona-photo.jpg"
+                alt="Barcelona Photo"
+                title="Barcelona Photo"
+              />
+            </a>
+            <figcaption>Barcelona <span>&copy; Fly Tap</span></figcaption>
+          </figure>
+          <figure>
+            <a href="https://en.parisinfo.com/practical-paris/info/guides/info-disruption-paris">
+              <img
+                src="./img/paris-photo.jpg"
+                alt="Paris Photo"
+                title="Paris Photo"
+              />
+            </a>
+            <figcaption>Paris <span>&copy; Paris Info</span></figcaption>
+          </figure>
+        </aside>
+      </section>
+      <section class="footer">
+        <footer>&copy; Vedat Turk</footer>
+        <article id="cookie">
+          <h5 id="cookieheader">Cookie Statement</h5>
+        </article>
+      </section>
+    </section>
+  </body>
+</html>

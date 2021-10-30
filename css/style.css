@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+body {
+  margin: 0%;
+  padding: 0;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto;
+  margin-right: auto;  */
+}
+
+img {
+  width: 200px;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: 50px;
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.burger-line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.mobile-navbar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -95vw;
+  z-index: -1;
+  min-width: 150vw;
+  min-height: 110vh;
+  background-color: white;
+}
+.mobile-navbar-ul > li {
+  padding: 5%;
+}
+
+.burger-check {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2;
+}
+
+.burger-check:checked ~ .mobile-navbar {
+  display: block;
+}
+
+#logo {
+  display: none;
+  width: 8%;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer > footer + a {
+  position: relative;
+  font-size: medium;
+  font-weight: bold;
+  padding: 1%;
+  right: 100px;
+  border: 2px double;
+  border-color: #db592a;
+  display: none;
+}
+
+.footer > #cookie {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 50%;
+  color: #fff;
+  z-index: 9999;
+  background-color: #fa0;
+}
+
+/* Tablet Version */
+@media screen and (min-width: 480px) and (max-width: 1179px) and (min-resolution: 2dppx) {
+  .burger-menu {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 375px;
+  }
+
+  #logo {
+    display: block;
+  }
+}
+
+/* PC Version*/
+@media screen and (min-width: 1280px) and (min-resolution: 1dppx) {
+  .burger-menu {
+    display: none;
+  }
+
+  img {
+    width: 500px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    display: block;
+  }
+}
